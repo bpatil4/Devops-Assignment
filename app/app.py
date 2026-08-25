@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     tenant = os.getenv("TENANT", "unknown")
-    return f"Welcome {tenant}"
+    return f"Welcome {tenant},<br> DevOps Assignment Demo Application is running successfully"
 
 @app.route("/health")
 def health():
